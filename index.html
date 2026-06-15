@@ -1,31 +1,308 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Kishan Anand - E Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishan Anand | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(15,23,42,0.9);
+backdrop-filter:blur(10px);
+z-index:100;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+font-size:1.2rem;
+color:#cbd5e1;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:1.1rem;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:12px 20px;
+border-radius:30px;
+border:1px solid #38bdf8;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+color:#94a3b8;
+}
+
+</style>
 </head>
+
 <body>
-  <h1>Kishan Anand</h1>
-  <h2>B.Tech AIML Student</h2>
 
-  <h3>About Me</h3>
-  <p>I am a B.Tech student specializing in Artificial Intelligence and Machine Learning.</p>
+<nav>
+<div class="logo">Kishan Anand</div>
 
-  <h3>Skills</h3>
-  <ul>
-    <li>C Programming</li>
-    <li>Python</li>
-    <li>Artificial Intelligence</li>
-    <li>Machine Learning</li>
-    <li>GitHub</li>
-  </ul>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-  <h3>Projects</h3>
-  <ul>
-    <li>2D Graphics Editor in C</li>
-    <li>AlphaMind AI - Stock Market AI Dashboard</li>
-  </ul>
+<section class="hero">
 
-  <h3>Links</h3>
-  <p>GitHub: https://github.com/Kishan-Anand</p>
+<h1>Hi, I'm <span>Kishan Anand</span></h1>
+
+<p>B.Tech AIML Student | AI Enthusiast | Developer</p>
+
+<a class="btn"
+href="https://www.linkedin.com/in/kishan-anand-596aa3385"
+target="_blank">
+Connect on LinkedIn
+</a>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+I am a B.Tech student specializing in Artificial Intelligence and Machine Learning.
+I enjoy building AI-powered applications, stock market analysis platforms,
+and software projects that solve real-world problems.
+
+Currently exploring Machine Learning, Web Development,
+and AI-based solutions.
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">C Programming</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Artificial Intelligence</div>
+<div class="skill">Data Structures</div>
+<div class="skill">Git & GitHub</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Next.js</div>
+<div class="skill">Tailwind CSS</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>AlphaMind AI</h3>
+<p>
+AI-powered stock market dashboard with stock analysis,
+AI predictions, market insights and portfolio tracking.
+</p>
+</div>
+
+<div class="project-card">
+<h3>2D Graphics Editor</h3>
+<p>
+Menu-driven graphics editor in C using a 2D character array.
+Supports line, rectangle, circle and triangle drawing.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Generative AI Projects</h3>
+<p>
+Projects and experiments involving AI, machine learning,
+and intelligent automation systems.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>Email: kishananand2007@gmail.com</p>
+
+<p>
+GitHub:
+<a href="https://github.com/Kishan-Anand" target="_blank">
+github.com/Kishan-Anand
+</a>
+</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/kishan-anand-596aa3385"
+target="_blank">
+View Profile
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Kishan Anand | AIML Student Portfolio
+
+</footer>
+
 </body>
 </html>
